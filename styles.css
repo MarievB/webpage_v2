@@ -1,0 +1,170 @@
+body {
+    height: 100%;
+    background-image: -webkit-linear-gradient(180deg, rgb(104, 1, 107) , rgb(148, 84, 0), rgb(0, 82, 149));
+    font-family: courier;
+    color: rgb(239, 222, 245);
+}
+
+.main-container {
+    padding: 100px;
+    text-align: center;
+}
+
+/* navigation line style */ 
+nav {
+    background-image: -webkit-linear-gradient(180deg, rgb(104, 1, 107, 0.7) , rgb(148, 84, 0, 0.7), rgb(0, 82, 149, 0.7));
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    padding: 2% 2%;
+    text-shadow: 3px 3px 8px ;
+    font-size: 150%;
+}
+
+.nav-element {
+    color: #c482c5; 
+}
+
+.nav-element:visited {
+    color: #c482c5; 
+}
+
+.nav-element:hover {
+    color: rgb(225, 161, 238)
+}
+
+.nav-element:active {
+    color: rgb(255, 255, 255);
+}
+
+/* center title thing */ 
+.center-container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-title {
+    font-size: 300%;
+}
+
+/* bottom of pages */
+.footer {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+} 
+
+/* nope button */
+.nope-button {
+    padding: 10px 10px;
+    font-size: 100%;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    background-color: #9511bd;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+  }
+  
+.nope-button:hover {
+    background-color: #a05213
+}
+  
+.nope-button:active {
+    background-color: #a05213;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* text style */ 
+p  {
+    color: rgb(215, 154, 223);
+}
+
+/* imgs */
+
+.ice-img {
+    height: 500px;
+}
+
+.boob-img {
+    justify-content: center;
+    height: 350px;
+    border-radius: 25%;
+}
+
+.squid-container .squid-img {
+    height: 200px;
+}
+
+.squid-container .squid-cig-img {
+    display: none;
+    height: 200px;
+}
+
+.squid-container:hover .squid-cig-img {
+    display: inline;
+    height: 200px;
+}
+
+.squid-container:hover .squid-img {
+    display: none;
+    height: 200px;
+}
+
+/* WEATHER APP */
+.card {
+    text-transform: capitalize;
+    background-color: rgba(31, 30, 30, 0.6);
+    border-radius: 20%;
+    padding: 5%;
+    text-align: center;
+}
+
+.glowing-link {
+    animation: glow 0.7s ease-in-out infinite alternate;
+    color: #ffe600;
+}
+
+.glowing-link:visited {
+    color: #ffe600; 
+}
+
+.glowing-link:hover {
+    color: #ffface;
+}
+
+.glowing-link:active {
+    color: rgb(255, 255, 255);
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 5px #ffe600, 0 0 20px #ffe81c, 0 0 30px #ffec43, 0 0 40px #fff176, 0 0 50px #fff492, 0 0 60px #fff9c0, 0 0 70px #ffffff;
+    }
+    
+    to {
+        text-shadow: 0 0 20px #ffe600, 0 0 30px #ffe81c, 0 0 40px #ffec43, 0 0 50px #fff176, 0 0 60px #fff492, 0 0 70px #fff9c0, 0 0 80px #ffffff;
+    }
+}
+
+@-webkit-keyframes shine {
+    from {
+      text-shadow: 0 0 10px #ffe600, 0 0 20px #ffe600, 0 0 30px #ffc400, 0 0 40px #ffa600, 0 0 50px #ff8800, 0 0 60px #ff6f00, 0 0 70px #ff5900;
+    }
+    
+    to {
+        text-shadow: 0 0 20px #ffe600, 0 0 30px #ffe600, 0 0 40px #ffc400, 0 0 50px #ffa600, 0 0 60px #ff8800, 0 0 70px #ff6f00, 0 0 80px #ff5900;
+    }
+}
+
+/* PRIMALITY TESTING */
+.prime-btn {
+
+}

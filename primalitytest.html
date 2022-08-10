@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Primality Test</title>
+        <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    </head> 
+    <nav>
+        <a class="nav-element" href="index.html">Home</a>
+        <a class="nav-element" href="projects.html">Projects</a>
+        <a class="nav-element" href="about.html">About</a>
+    </nav>
+    <body>
+        <div class="center-container">
+            <h1>
+                Primality Test
+            </h1>
+            <div class = "search">
+                <input id= "input_number" type="text" class="search-bar">
+                <button id="prime-btn" class="nope-button" pys-onClick="mr">Is this a prime?</button>
+                <div id="output"></div>
+                <py-script src="./millerrabin.py"></py-script>
+                <p id="her_du"> </p>
+            </div>
+            <script>
+                document.getElementById("input_number").addEventListener("keypress", function(event) {
+                    if (event.key === "Enter") {
+                        document.getElementById("prime-btn").click();
+                    }
+                });
+            </script>
+    </body>
+
+    </html>
