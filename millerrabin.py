@@ -29,9 +29,9 @@ def MillerRabin(n):
 def itMillerRabin(n,m):
     for i in range(m):
         if not MillerRabin(n):
-            return "not a prime :("
+            return "not a prime (╯°□°)╯︵ ┻━┻"
     return "probably a prime ¯\_(ツ)_/¯ "
 
 def mr(e):
     inp = document.getElementById("input_number").value
-    pyscript.write("her_du", itMillerRabin(int(inp),10))
+    pyscript.write("output_text", itMillerRabin(int(inp),10))

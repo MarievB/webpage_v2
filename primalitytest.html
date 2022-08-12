@@ -7,7 +7,15 @@
     </head> 
     <nav>
         <a class="nav-element" href="index.html">Home</a>
-        <a class="nav-element" href="projects.html">Projects</a>
+        <div class="dropdown">
+            <a class="nav-element" href="projects.html">Projects</a>
+            <div class="dropdown-content">
+                <a class="nav-element" href="index.html">website</a>
+                <a class="nav-element" href="primalitytest.html">prime test</a>
+                <a class="nav-element" href="weather.html">weather app</a>
+                <a class="nav-element" href="boobs.html">boob things</a>            
+              </div>
+        </div>
         <a class="nav-element" href="about.html">About</a>
     </nav>
     <body>
@@ -15,12 +23,15 @@
             <h1>
                 Primality Test
             </h1>
-            <div class = "search">
-                <input id= "input_number" type="text" class="search-bar">
-                <button id="prime-btn" class="nope-button" pys-onClick="mr">Is this a prime?</button>
-                <div id="output"></div>
+            <p>This runs via python, so be patient at first, then go nuts, it's quick.</p>
+            <p>I reckon functionality is sorta self explanatory.</p>
+            <div class = "prime-box">
+                <input id = "input_number" type = "text" class = "search-bar">
+                <button id = "prime-btn" class = "nope-button" pys-onClick="mr">Is this a prime?</button>
                 <py-script src="./millerrabin.py"></py-script>
-                <p id="her_du"> </p>
+                <div id = "output" class = "output-box">
+                    <p id="output_text"> This is where the output will be (✿｡✿)</p>
+                </div>
             </div>
             <script>
                 document.getElementById("input_number").addEventListener("keypress", function(event) {
@@ -29,6 +40,7 @@
                     }
                 });
             </script>
+        </div>
     </body>
 
     </html>
